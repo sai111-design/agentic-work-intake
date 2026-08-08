@@ -80,7 +80,9 @@ PENDING ──────→ EXECUTING ──→ COMPLETED
 
 Watch the working prototype in action:
 
-<video src="docs/demo.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/sai111-design/agentic-work-intake/raw/main/docs/demo.mp4" controls="controls" style="max-width: 100%;">
+  <a href="https://github.com/sai111-design/agentic-work-intake/raw/main/docs/demo.mp4">View Demo Video</a>
+</video>
 
 ## Setup
 
