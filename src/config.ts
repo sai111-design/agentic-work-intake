@@ -5,7 +5,11 @@
 
 export const config = {
   geminiApiKey: process.env.GEMINI_API_KEY ?? '',
-  geminiModel: process.env.GEMINI_MODEL ?? 'gemini-2.5-flash',
+  // gemini-2.5-flash is still listed by models.list() but returns 404 on
+  // generation for accounts created after its cutoff ("no longer available to
+  // new users"), so it is not a safe default. gemini-3.5-flash was the fastest
+  // model measured that returns schema-valid output for all three scenarios.
+  geminiModel: process.env.GEMINI_MODEL ?? 'gemini-3.5-flash',
   dbPath: process.env.DB_PATH ?? './data/app.db',
   port: Number(process.env.PORT ?? 3000),
 } as const;

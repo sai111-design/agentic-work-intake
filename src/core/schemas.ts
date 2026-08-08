@@ -64,7 +64,7 @@ export const ActionItemSchema = z.object({
   missing_information: z
     .array(z.string())
     .describe(
-      'Specific facts absent from the request that are REQUIRED before this action could be carried out — e.g. "recipient email address is not specified". Empty array if nothing is missing. Never guess a value instead of listing it here.',
+      'ONLY facts without which this action is impossible to even attempt. Before adding an entry ask: could a competent assistant still produce a reasonable draft or record for a human to review and correct? If yes, leave this empty. Drafting a message and recording a reminder are always possible; analysing or summarising content that was never provided is not. Never guess a value instead of listing it here.',
     ),
   due_in_days: z
     .number()

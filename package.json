@@ -10,10 +10,10 @@
   "scripts": {
     "build": "tsc",
     "init-db": "npm run build && node dist/db/init.js",
-    "dev": "npm run build && node --env-file=.env dist/server.js",
-    "start": "node dist/server.js",
+    "dev": "npm run build && node --env-file-if-exists=.env dist/server.js",
+    "start": "node --env-file-if-exists=.env dist/server.js",
     "test": "npm run build && node --test \"dist/tests/**/*.test.js\"",
-    "test:live": "npm run build && node --env-file=.env --test \"dist/tests-live/**/*.test.js\""
+    "test:live": "npm run build && node --env-file-if-exists=.env --test \"dist/tests-live/**/*.test.js\""
   },
   "dependencies": {
     "@google/genai": "^2.16.0",
