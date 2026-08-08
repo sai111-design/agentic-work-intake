@@ -78,11 +78,9 @@ PENDING ──────→ EXECUTING ──→ COMPLETED
 
 ## Demo
 
-Watch the working prototype in action:
+Watch the working prototype in action — click the image below to download and view the demo video:
 
-<video src="https://github.com/sai111-design/agentic-work-intake/raw/main/docs/demo.mp4" controls="controls" style="max-width: 100%;">
-  <a href="https://github.com/sai111-design/agentic-work-intake/raw/main/docs/demo.mp4">View Demo Video</a>
-</video>
+[![Demo Video — Agentic Work Intake Prototype](docs/demo-thumbnail.png)](https://github.com/sai111-design/agentic-work-intake/raw/main/docs/demo.mp4)
 
 ## Setup
 
