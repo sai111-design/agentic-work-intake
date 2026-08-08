@@ -76,6 +76,12 @@ PENDING ──────→ EXECUTING ──→ COMPLETED
 
 **Security invariant:** `PENDING_APPROVAL → EXECUTING` is illegal. Approval cannot be skipped. This is enforced by the transition table and tested explicitly.
 
+## Demo
+
+Watch the working prototype in action:
+
+<video src="docs/demo.mp4" controls="controls" style="max-width: 100%;"></video>
+
 ## Setup
 
 ### Prerequisites
