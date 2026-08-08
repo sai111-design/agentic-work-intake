@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agentic Work Intake — turns unstructured requests into structured, reviewable, partially automated workflows.">
+  <title>Agentic Work Intake</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="health-banner" class="health-banner hidden"></div>
+
+  <header>
+    <h1>⚙ Agentic Work Intake</h1>
+    <p class="subtitle">Unstructured requests → structured, reviewable, automated workflows</p>
+  </header>
+
+  <main>
+    <!-- SECTION 1: INTAKE -->
+    <section id="intake-section" class="card">
+      <h2>1. Submit a Work Request</h2>
+      <div class="scenario-buttons">
+        <button class="scenario-btn" data-scenario="partner">Scenario 1: Partner Follow-up</button>
+        <button class="scenario-btn" data-scenario="website">Scenario 2: Website Review</button>
+        <button class="scenario-btn" data-scenario="vague">Scenario 3: Vague Request</button>
+      </div>
+      <textarea id="request-input" rows="5" placeholder="Paste any unstructured work request — an email, meeting notes, founder instructions, a customer request, a bug report…"></textarea>
+      <button id="submit-btn" class="primary-btn">Submit Request</button>
+      <div id="submit-status" class="status-line hidden"></div>
+    </section>
+
+    <!-- SECTION 2: WHAT THE AI UNDERSTOOD -->
+    <section id="interpretation-section" class="card hidden">
+      <h2>2. What the AI Understood</h2>
+      <div id="interpretation-content"></div>
+    </section>
+
+    <!-- SECTION 3: AGENT PLAN -->
+    <section id="plan-section" class="card hidden">
+      <h2>3. Agent Plan</h2>
+      <div id="plan-content"></div>
+    </section>
+
+    <!-- SECTION 4: TOOL RESULTS -->
+    <section id="results-section" class="card hidden">
+      <h2>4. Tool Results</h2>
+      <div id="results-content"></div>
+    </section>
+
+    <!-- SECTION 5: ACTIVITY TRACE -->
+    <section id="trace-section" class="card hidden">
+      <h2>5. Activity Trace</h2>
+      <div id="trace-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Agentic Work Intake Prototype — AI-assisted workflow automation</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
